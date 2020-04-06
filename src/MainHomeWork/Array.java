@@ -17,7 +17,7 @@ package MainHomeWork;
              arr = new int[size];
              this.size = size;
              for (int i = 0; i < arr.length; i++) {
-                 arr[i] = i;
+                 arr[i] = i*2;
              }
          }
 //        public Array(int size,int index) {
@@ -63,12 +63,12 @@ package MainHomeWork;
         //        2. Написать метод добавления:
         public void insert(int number){
              int i,j;
-             for (i=0;i<this.size;i++ ){
+             for (i=0;i<this.arr.length;i++ ){
                  if (this.arr[i] >number){
                      break;
                  }
              }
-             for (j=this.size-1; j > i; j--){
+             for (j=this.arr.length-1; j > i; j--){
                  this.arr[j]=this.arr[j-1];
              }
             this.arr[i] =number;
